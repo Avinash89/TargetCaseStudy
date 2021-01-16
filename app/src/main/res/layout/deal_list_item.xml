@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deal_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/deal_list_item_image_view"
+            android:layout_width="@dimen/deal_list_item_image_size"
+            android:layout_height="@dimen/deal_list_item_image_size"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deal_list_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view_item"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/deal_list_item_title"
+                android:background="@color/gray_color"></View>
+
+            <TextView
+                android:id="@+id/deal_list_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_item"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_item"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_label_ship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ship"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_label_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="or"
+                    android:textColor="@color/lightgray_color"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/deal_list_item_aisle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/circle_background"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_color"></View>
+
+</LinearLayout>
