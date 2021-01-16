@@ -10,7 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
 import com.target.targetcasestudy.R
-import com.target.targetcasestudy.util.LuhnValidator
+import com.target.targetcasestudy.util.CardValidator
 
 
 /**
@@ -28,7 +28,7 @@ import com.target.targetcasestudy.util.LuhnValidator
 class PaymentDialogFragment : DialogFragment() {
 
     private lateinit var submitButton: Button
-    private var lValidator: LuhnValidator = LuhnValidator()
+    private var lValidator: CardValidator = CardValidator()
 
     override fun onCreateView(
         inflater: LayoutInflater,
